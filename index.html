@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maquillaje para ti</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/iniciostyle.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./imagenes/logo 1.png" width="40" height="40">
+      Inicio
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pagina.html">Página 2</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CARRUSEL -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="./imagenes/maquillaje 1.jpg" class="d-block w-100 tamano">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./imagenes/maquillaje 6.jpg" class="d-block w-100 tamano">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./imagenes/maquillaje 3.jpg" class="d-block w-100 tamano">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- FILA 1 -->
+<div class="container mt-5">
+  <div class="row text-center align-items-center">
+
+    <div class="col-md-4">
+      <h3>Maquillaje</h3>
+      <p>El maquillaje es el arte de aplicar productos cosméticos sobre la piel, para resaltar la belleza natural, ocultar imperfecciones y transformar la apariencia según el estilo personal o la ocasión.
+A lo largo de la historia, ha evolucionado de ser una práctica ritual a convertirse en una herramienta de empoderamiento y creatividad.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="./imagenes/maquillaje 7.jpg" class="img-fluid">
+    </div>
+
+    <div class="col-md-4">
+      <h3>Que puedes encontrar aquí</h3>
+      <p>Vas a identificar el arte de resaltar tu mejor versión. En nuestra sección de Tips & Tutoriales, hemos recopilado todo lo que necesitas para pasar de principiante a experta</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FILA 2 -->
+<div class="container mt-5 text-center">
+  <div class="row">
+    <div class="col">
+      <h3>IMPORTANTE</h3>
+      <p>El maquillaje debe ser un espacio donde todas las personas puedan expresarse libremente</p>
+    </div>
+  </div>
+</div>
+
+<!-- FILA 3 -->
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- IZQUIERDA DESPLEGABLE -->
+    <div class="col-md-4">
+      <h4>Productos</h4>
+      <select class="form-select" onchange="mostrarInfo()">
+        <option value="">Selecciona un producto</option>
+        <option value="base">Base</option>
+        <option value="Gloss">Gloss</option>
+        <option value="Corrector">Corrector</option>
+      </select>
+
+      <p id="infoProducto" class="mt-3"></p>
+    </div>
+
+    <!-- CENTRO TEXTO -->
+    <div class="col-md-4 text-center">
+      <h4>NOTA</h4>
+      <p>No necesitas una gran cantidad de productos para lograr un buen maquillaje; con unos pocos básicos bien elegidos puedes conseguir un look bonito, natural y acorde a tu estilo. Sin embargo, también es importante tener en cuenta la calidad de las marcas, ya que esto influye en el acabado, la duración y el cuidado de tu piel. Lo ideal es encontrar un equilibrio: usar lo necesario, pero eligiendo productos confiables que te hagan sentir seguro/a/e y cómodo/a/e.</p>
+    </div>
+
+    <!-- DERECHA TABLA -->
+    <div class="col-md-4">
+      <h4>Marcas recomendadas</h4>
+      <table class="table">
+        <tr>
+          <th>Producto</th>
+          <th>Marca</th>
+        </tr>
+        <tr>
+          <td>Base</td>
+          <td>Maybelline</td>
+        </tr>
+        <tr>
+          <td>Gloss</td>
+          <td>Anika</td>
+        </tr>
+        <tr>
+          <td>Corrector</td>
+          <td>Bloomshell</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- FILA 4 -->
+<div class="container mt-5">
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <iframe 
+        class="w-100 rounded shadow" 
+        height="250"
+        src="https://www.youtube.com/embed/0zv-RU5uBSk"
+        title="Tutorial de maquillaje"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Tutorial</h3>
+      <p>En el mundo del maquillaje no existen reglas estrictas ni pasos únicos que deban seguirse al pie de la letra. Cada persona tiene su propio estilo, sus gustos y su forma de expresarse, por lo que el maquillaje se convierte en una experiencia libre y creativa. Sin embargo, para quienes desean una guía o están comenzando, contar con un tutorial puede ser de gran ayuda..</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white mt-5 p-4">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <h5>Creadora</h5>
+        <p>Sofia Hernández</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Redes Sociales</h5>
+        <p>Instagram | Facebook | TikTok</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Otros</h5>
+        <p>Contacto | Ayuda</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPT PARA EL DESPLEGABLE -->
+<script>
+function mostrarInfo() {
+  let valor = document.querySelector("select").value;
+  let texto = "";
+
+  if (valor === "base") {
+    texto = "La base unifica el tono de la piel y le brinda luminosidad.";
+  } else if (valor === "Gloss") {
+    texto = "El gloss da color a los labios logrando que se vean saludables";
+  } else if (valor === "Corrector") {
+    texto = "El corrector oculta manchitas o granitos logrando que la piel se vea uniforme";
+  }
+
+  document.getElementById("infoProducto").innerText = texto;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
