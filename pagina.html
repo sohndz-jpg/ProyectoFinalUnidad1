@@ -1,134 +1,58 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página 2</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/paginastyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beauty Studio | Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/iniciostyle.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Inicio</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Página 2</a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primary-color);">
+            <img src="./imagenes/logo 1.png" width="35" height="35" class="me-2"> BEAUTY STUDIO
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active fw-bold" href="pagina.html">Tips</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
-<!-- SECCIÓN 1 -->
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Recomendaciones</h2>
-      <p>1. Preparación de la piel (clave del éxito)</p>
-      <p>Antes de maquillarte:Limpia tu rostro-Hidrata tu piel-Usa protector solar</p>
-      <p>2. Usa una base acorde a tu tono de piel</p>
-      <p>Elige un color lo más parecido posible a tu piel-Difumina bien hacia el cuello-Evita exceso de producto</p>
-      <p>3. Corrector: tu mejor aliado</p>
-      <p>Cubre ojeras e imperfecciones-Usa un tono igual o ligeramente más claro-Difumina con pequeños toques</p>
-      <p>4. Sella con polvos</p>
-      <p>Controla el brillo (zona T)-Hace que el maquillaje dure más</p>
-      <p>5. Resalta tus ojos</p>
-      <p>Usa sombras neutras si eres principiante-Aplica delineador fino-Usa máscara de pestañas (1 y 2 capas)</p>
-      <p>6. No olvides las cejas</p>
-      <p>Rellénalas suavemente-Sigue su forma natural-Fíjalas con gel</p>
-      <p>7. Añade color al rostro</p>
-      <p>Usa rubor para dar efecto de “buena cara”-Aplica en las mejillas con movimientos suaves</p>
-      <p>8. Labios: el toque final</p>
-      <p>Tonos nude o rosados para el día-Colores intensos para la noche</p>
+    <div class="row align-items-center g-5">
+        <div class="col-md-6">
+            <h2 class="fw-bold mb-4" style="color: var(--secondary-color);">Consejos de Belleza</h2>
+            <div class="p-3 mb-3 border-start border-4 border-danger bg-white shadow-sm rounded">
+                <h6 class="fw-bold">01. Preparación</h6><p class="small m-0 text-muted">Limpia e hidrata siempre antes de la base.</p>
+            </div>
+            <div class="p-3 mb-3 border-start border-4 border-primary bg-white shadow-sm rounded">
+                <h6 class="fw-bold">02. El Corrector</h6><p class="small m-0 text-muted">Aplica en forma de triángulo para iluminar.</p>
+            </div>
+        </div>
+        <div class="col-md-6"><img src="./imagenes/maquillaje 4.jpg" class="img-fluid rounded-4 shadow-lg"></div>
     </div>
-    <div class="col-md-6">
-      <img src="./imagenes/maquillaje 4.jpg" class="img-fluid">
+
+    <div class="mt-5 p-4 bg-white rounded-4 shadow-sm">
+        <h4 class="fw-bold mb-4">Rutina de Limpieza</h4>
+        <table class="table table-hover m-0">
+            <thead class="table-light"><tr><th>Paso</th><th>Acción</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Lavar manos con jabón antibacterial.</td></tr>
+                <tr><td>2</td><td>Humedece el rostro con agua tibia.</td></tr>
+                <tr><td>3</td><td>Masajea el limpiador suavemente.</td></tr>
+                <tr><td>4</td><td>Enjuaga y seca sin frotar.</td></tr>
+            </tbody>
+        </table>
     </div>
-  </div>
 </div>
 
-<!-- TABLA -->
-<div class="container mt-5">
-  <h3>Como limpiar tu rostro</h3>
-  <table class="table">
-    <tr>
-      <th>Pasos</th>
-    </tr>
-    <tr>
-      <td>1. Lava tus manos.</td>
-</td>
-    </tr>
-    <tr>
-      <td>2. Humedece tu rostro con agua tibia.</td>
-    </tr>
-    <tr>
-      <td>3. Aplica un limpiador facial.</td>
-    </tr>
-    <tr>
-      <td>4. Masajea suavemente en círculos.</td> 
-   </tr>
-   <tr>
-      <td>5. Enjuaga con agua.</td> 
-    </tr>
-    <tr>
-      <td>6. Seca con una toalla limpia, sin frotar.</td>   
-   </tr>
-   <tr>
-      <td>6. Seca con una toalla limpia, sin frotar.</td>
-   </tr>
-   <tr>
-      <td>6. Seca con una toalla limpia, sin frotar.</td>    
-    </tr>
+<footer class="py-4 text-center mt-5"><p class="text-muted small">© 2026 Sofia Hernández</p></footer>
 
-  </table>
-</div>
-
-<!-- SECCIÓN 3 -->
-<div class="container mt-5">
-  <h3>Recuerda</h3>
-  <ul>
-    <li>El maquillaje no cambia quién eres, solo resalta la seguridad y belleza que ya vive en ti</li>
-  </ul>
-</div>
-
-<!-- FOOTER -->
-<footer class="bg-dark text-white mt-5 p-4">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-4">
-        <h5>Creadora</h5>
-        <p>Sofia Hernández</p>
-      </div>
-
-      <div class="col-md-4">
-        <h5>Redes</h5>
-        <p>Instagram | Facebook | TikTok</p>
-      </div>
-
-      <div class="col-md-4">
-        <h5>Links</h5>
-        <p>Contacto | Ayuda</p>
-      </div>
-
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
